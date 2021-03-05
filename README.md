@@ -1,4 +1,4 @@
-# React-redux
+# Learning React-redux
 
 Learning a course through Udemy
 
