@@ -8,4 +8,4 @@ const VideoDetail = ({ video }) => {
 	return <div>{video.snippet.title}</div>;
 };
 
-export default VideoList;
+export default VideoDetail;
