@@ -12,4 +12,5 @@ Each project is seperated into their own folder.
 - Language-Translate-Codepen (Completed)
 - Components (Completed)
 - JSX (Completed)
-- Seasons (Working)
+- Seasons (Completed)
+- Videos (Completed)
