@@ -3,8 +3,10 @@ import React, { useState, useEffect } from 'react';
 const Search = () => {
 	const [ term, setTerm ] = useState('');
 
+    console.log('Run every render')
+
     useEffect(() => {
-        console.log('hello');
+            console.log('Run after each render and at initial render');
     }, [term]);
 
 	return (
