@@ -31,7 +31,7 @@ const options = [
 },
 {
 	
-	label: 'The Color Blue',
+	label: 'A Shade of Blue',
 	value: 'blue'
 }
 
