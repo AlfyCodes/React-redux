@@ -22,7 +22,6 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
   }, []);
 
   const renderedOptions = options.map((option) => {
-    F;
     if (option.value === selected.value) {
       return null;
     }
