@@ -16,27 +16,24 @@ const Search = () => {
     };
   }, [term]);
 
-  useEffect(
-    (term) => {
-      const search = async () => {
-        const { data } = await axios.get("https://en.wikipedia.org/w/api.php", {
-          params: {
-            action: "query",
-            list: "search",
-            origin: "*",
-            format: "json",
-            srsearch: debouncedTerm,
-          },
-        });
-        console.log(data);
-        setResults(data.query.search);
-      };
-      if (term) {
-        search();
-      }
-    },
-    [debouncedTerm]
-  );
+  useEffect(() => {
+    const search = async () => {
+      const { data } = await axios.get("https://en.wikipedia.org/w/api.php", {
+        params: {
+          action: "query",
+          list: "search",
+          origin: "*",
+          format: "json",
+          srsearch: debouncedTerm,
+        },
+      });
+      console.log(data);
+      setResults(data.query.search);
+    };
+    if (term) {
+      search();
+    }
+  }, [debouncedTerm]);
 
   const renderedResults = results.map((result) => {
     return (
